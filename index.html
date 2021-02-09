@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+
+    <title>Controle da Nave</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu-lateral">
+            <img src="assets/logo.png" alt="logo">
+            <div class="menu-itens">
+                <ul>
+                    <li>
+                        <img src="assets/dashboard.svg" alt="">
+                        <p>dashboard</p>
+                    </li>
+                    <li>
+                        <img src="assets/personagens.svg" alt="">
+                        <p>Personagens</p>
+                    </li>
+                    <li>
+                        <img src="assets/planetas.svg" alt="">
+                        <p>Planetas e  Luas</p>
+                    </li>
+                    <li>
+                        <img src="assets/nave.svg" alt="">
+                        <p>Naves</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="setings">
+                <i class="fas fa-cogs"></i>
+                <p>Configurações</p>
+                </div>
+        </div>
+        <div class="content">
+            <div class="card-header">
+                <!-- ESTRUTURA DO CARD
+                01 CARD PARA ENGLOBAR 
+                02 CARD CONTENT PARA DEFINIR CONTEUDO
+                03 CARD INFO PARA INFORMAÇÕES
+                04 IMAGEM DO CARD 
+                -->
+            <div class="card card-small">
+                <div class="card-content">
+                    <div class="card-info">
+                        <p>Personagens</p>
+                        <h2 id="personagens"></h2>
+                    </div>
+                    <img src="assets/personagens-black.svg" alt="">
+                </div>
+            </div>
+
+            <div class="card card-long">
+
+                <div class="card-container">
+                    <div class="card-content">
+                        <div class="card-info">
+                            <p>Luas</p>
+                            <h2 id="luas"></h2>
+                        </div>
+                        <img src="assets/luas-black.svg" alt="">
+                    </div>
+                
+                <div class="card-content">
+                    <div class="card-info">
+                        <p>Planetas</p>
+                        <h2 id="planetas"></h2>
+                    </div>
+                    <img src="assets/planetas-black.svg" alt="">
+                </div>
+            </div>
+            </div>
+
+            <div class="card card-small">
+                <div class="card-content">
+                    <div class="card-info">
+                        <p>Naves</p>
+                        <h2 id="naves"></h2>
+                    </div>
+                    <img src="assets/nave-black.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-info">
+        <div class="table">
+            <h5>Últimos Filmes</h5>
+            <p>Saiba os últimos lançamentos da marca</p>
+            <table id="filmesTable">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Estreia</th>
+                        <th>Diretor</th>
+                        <th>Episódio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="chart">
+            <div id="piechart" style="width: 400px; height: 400px;"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
